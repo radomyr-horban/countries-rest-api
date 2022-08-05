@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: rgb(17, 153, 212);
+}
+main {
+  min-height: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  padding: 0 10px;
+  border-radius: 5px;
+
+  max-width: 250px;
+  height: 40px;
+}
+
+#input-country-name {
+  outline: none;
+  border: 1px solid white;
+  padding: 0 20px;
+}
+
+.container {
+  margin: 20px auto;
+  border: 2px solid black;
+  max-width: 400px;
+  border-radius: 20px;
+
+  border: #fff;
+  background-color: #fff;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  padding: 20px;
+}
+li:not(:first-child) {
+  list-style-type: none;
+  padding: 5px;
+
+  font-weight: bold;
+}
+
+.country-details {
+  border-left: 4px solid rgb(2, 179, 255);
+  padding-left: 10px;
+}
+
+li span {
+  font-weight: 100;
+}
+
+#country-flag {
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+#country-flag img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 20px;
+}
+
+/* new */
+@media (max-width: 769px) {
+  .container {
+    max-width: 300px;
+  }
+}
+
+/* 1. Fix document height --> input cannot be seen when typing on a phone   */
+
+.container p {
+  text-align: center;
+  padding: 20px;
+  max-width: 250px;
+}
+
+.container #input-error {
+  font-weight: bold;
+}
