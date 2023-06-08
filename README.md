@@ -17,7 +17,7 @@
 
 You can open this link on both desktop and mobile.
 
-https://github.com/radomyr-horban/countries-rest-api.git
+https://radomyr-horban.github.io/countries-rest-api/
 
 ## License
 
